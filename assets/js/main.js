@@ -12,10 +12,11 @@ $(document).ready(function () {
     $('#gallery1').on('click', function (event) {
         event.preventDefault();
         Fresco.show([
-            { url: 'assets/img/projects/acheimeuequipo/1.png', caption: 'Login Page' },
-            { url: 'assets/img/projects/acheimeuequipo/banner.png', caption: 'Home Page' },
-            { url: 'assets/img/projects/acheimeuequipo/2.png', caption: 'User Ads Page' },
-            { url: 'assets/img/projects/acheimeuequipo/3.png', caption: 'Ad Details Page' }
+            { url: 'assets/img/projects/hotel/3.jpg', caption: 'Home Page' },
+			{ url: 'assets/img/projects/hotel/banner.png', caption: 'Map Reservation' },
+			{ url: 'assets/img/projects/hotel/1.jpg', caption: 'Login Page' },            
+            { url: 'assets/img/projects/hotel/2.jpg', caption: 'Reservation Ads Page' }
+            
         ]);
     });
 
