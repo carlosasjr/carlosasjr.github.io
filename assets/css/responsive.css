@@ -1,0 +1,14 @@
+/* small mobile :320px. */
+
+@media (max-width: 767px) {
+    .user-image {
+        height: 260px;
+    }
+    .navbar-nav {
+        background: rgba(0, 0, 0, 0.6);
+        text-align: center;
+    }
+    section {
+        padding: 70px 0;
+    }
+}

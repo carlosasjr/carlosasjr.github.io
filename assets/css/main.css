@@ -1,0 +1,487 @@
+/*
+* ----------------------------------------------------------------------------------------
+*   Variables
+* ----------------------------------------------------------------------------------------
+*
+*/
+
+:root {
+  --primary: #3f6ad8;
+  --background: #f5f6f8;
+  --white: #ffffff;
+  --black: #000000;
+  --text: #464646;
+  --sidebar: #343a40;
+  --gray: #d4d9df;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+*   Default
+* ----------------------------------------------------------------------------------------
+*
+*/
+
+html, body, p, a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+  background: var(--white);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+*   Layout
+* ----------------------------------------------------------------------------------------
+*
+*/
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+*   Header
+* ----------------------------------------------------------------------------------------
+*
+*/
+
+.navbar {
+  transition: all 0.4s;
+}
+
+.navbar .nav-link {
+  color: var(--white);
+}
+
+.navbar i {
+  color: var(--white);
+}
+
+.navbar .nav-item.active {
+  color: var(--white);
+  background: var(--primary);
+  text-decoration: none;
+}
+
+.navbar .navbar-brand {
+  color: var(--white);
+}
+
+/* Change navbar styling on scroll */
+
+.navbar.active {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.navbar.active .nav-link {
+  color: var(--white);
+}
+
+.navbar.active .nav-link:hover, .navbar.active .nav-link:focus {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+*   Slider
+* ----------------------------------------------------------------------------------------
+*
+*/
+
+.slider-area::before {
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.single-slider {
+  background-image: url("../img/banner.jpg");
+  background-position: center center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.single-slider-all {
+  color: var(--white);
+  position: relative;
+  z-index: 1;
+}
+
+.height-100vh .container {
+  display: table;
+  height: 100%;
+}
+
+.height-100vh .container .slider-middle {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.slider-title h1 {
+  color: var(--white);
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.slider-title h2 {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0;
+  text-transform: capitalize;
+}
+
+.slider-icon ul {
+  padding-left: 0;
+}
+
+.slider-icon li {
+  display: inline-block;
+}
+
+.slider-icon li a {
+  color: var(--white);
+  display: block;
+  font-size: 2em;
+  margin-right: 10px;
+}
+
+.slider-icon li a:hover {
+  color: var(--gray);
+}
+
+.scroll-icon a {
+  border: 1px solid var(--white);
+  border-radius: 50px;
+  color: var(--white);
+  font-size: 25px;
+  padding: 25px 10px;
+}
+
+/* Mouse scroll effect */
+
+.mouse {
+  position: absolute;
+  bottom: 40px;
+  z-index: 5;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: block;
+}
+
+.mouse .mouse-icon {
+  display: block;
+  width: 25px;
+  height: 45px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  -webkit-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.mouse .mouse-wheel {
+  height: 4px;
+  margin: 2px auto 0;
+  display: block;
+  width: 4px;
+  background-color: var(--white);
+  border-radius: 50%;
+  -webkit-animation: 1.6s ease infinite wheel-up-down;
+  -moz-animation: 1.6s ease infinite wheel-up-down;
+  animation: 1.6s ease infinite wheel-up-down;
+}
+
+.mouse:hover .mouse-icon {
+  border-color: var(--white);
+}
+
+@-webkit-keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 0;
+  }
+}
+
+@keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 0;
+  }
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+*   About
+* ----------------------------------------------------------------------------------------
+*
+*/
+
+.user-image {
+  background-image: url("../img/user1.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 500px;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+*   Resume
+* ----------------------------------------------------------------------------------------
+*
+*/
+
+.resume-wrap {
+  width: 100%;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.resume-wrap .date {
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  color: var(--primary);
+}
+
+/* Timeline*/
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+
+ul.timeline:before {
+  content: " ";
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 1;
+}
+
+ul.timeline>li {
+  margin: 20px 0;
+  padding-left: 50px;
+}
+
+ul.timeline>li:before {
+  content: " ";
+  background: var(--white);
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid var(--primary);
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+*   Skills and Tools
+* ----------------------------------------------------------------------------------------
+*
+*/
+
+.custom-card {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin: 30px 0 30px 0;
+  border-radius: 6px;
+  color: rgba(0, 0, 0, 0.87);
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.custom-card ul {
+  list-style: none;
+  padding: 0;
+  max-width: 240px;
+  margin: 10px auto;
+}
+
+.custom-card ul li {
+  color: #3c4857;
+  text-align: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+}
+
+.custom-card ul li:last-child {
+  border-bottom: none;
+}
+
+.align-flex-end {
+  align-items: flex-end;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.bg-light {
+  background: var(--background) !important;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+*   Footer
+* ----------------------------------------------------------------------------------------
+*
+*/
+
+.footer {
+  display: block;
+  text-align: center;
+  background: var(--black);
+  color: var(--white);
+  padding: 50px;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+*   Helpers
+* ----------------------------------------------------------------------------------------
+*
+*/
+
+/* Blinking Effect*/
+
+.blinking {
+  animation: blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText {
+  0% {
+    color: var(--white);
+  }
+  49% {
+    color: var(--white);
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: var(--white);
+  }
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  background: var(--primary);
+  margin: 8px auto;
+}
+
+.borderless td, .borderless th {
+  border: none;
+}
+
+.height-100vh {
+  height: 100vh;
+}
+
+h2 {
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.text-topic {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 700;
+}
