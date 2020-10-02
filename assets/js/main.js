@@ -38,13 +38,6 @@ $(document).ready(function () {
         ]);
     });*/
 
-    $('#gallery3').on('click', function (event) {
-        event.preventDefault();
-        Fresco.show([
-            { url: 'assets/img/projects/ninecontrol/banner.png', caption: 'Cashier Page' },
-        ]);
-    });
-
 
     //Set active tab on navbar
     $(window).scroll(function () {
