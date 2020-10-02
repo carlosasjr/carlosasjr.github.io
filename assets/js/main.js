@@ -19,14 +19,24 @@ $(document).ready(function () {
             
         ]);
     });
+	
+	
+	$('#gallery2').on('click', function (event) {
+        event.preventDefault();
+        Fresco.show([
+            { url: 'assets/img/projects/softproadv/processos.jpg', caption: 'Processes' },			
+			{ url: 'assets/img/projects/softproadv/detalhes-processo.jpg', caption: 'Processe details' },            
+            { url: 'assets/img/projects/softproadv/agenda.jpg', caption: 'Schedule' }           
+        ]);
+    });	
 
-    $('#gallery2').on('click', function (event) {
+ /*   $('#gallery2').on('click', function (event) {
         event.preventDefault();
         Fresco.show([
             { url: 'assets/img/projects/larachat/banner.png', caption: 'Home Page' },
             { url: 'https://vimeo.com/456722569', caption: 'Video real time chat' }
         ]);
-    });
+    });*/
 
     $('#gallery3').on('click', function (event) {
         event.preventDefault();
