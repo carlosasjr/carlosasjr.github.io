@@ -56,7 +56,7 @@ $(document).ready(function () {
     $('#gallery4').on('click', function (event) {
         event.preventDefault();
         Fresco.show([
-            { url: 'assets/img/projects/ev/1.png', caption: 'Map',
+            { url: 'assets/img/projects/ev/1.png', caption: 'Map' },
             { url: 'assets/img/projects/ev/2.png', caption: 'Search Route' },
             { url: 'assets/img/projects/ev/3.png', caption: 'Login' },
             { url: 'assets/img/projects/ev/4.png', caption: 'Search From' },
