@@ -52,6 +52,31 @@ $(document).ready(function () {
     });	
 
 
+  
+    $('#gallery4').on('click', function (event) {
+        event.preventDefault();
+        Fresco.show([
+            { url: 'assets/img/projects/ev/1.png', caption: 'Map',
+            { url: 'assets/img/projects/ev/2.png', caption: 'Search Route' },
+            { url: 'assets/img/projects/ev/3.png', caption: 'Login' },
+            { url: 'assets/img/projects/ev/4.png', caption: 'Search From' },
+            { url: 'assets/img/projects/ev/5.png', caption: 'Search To' },
+            { url: 'assets/img/projects/ev/6.png', caption: 'Search Route' },
+            { url: 'assets/img/projects/ev/7.png', caption: 'Map' },            
+            { url: 'assets/img/projects/ev/9.png', caption: 'Show Route' },
+            { url: 'assets/img/projects/ev/10.png', caption: 'Charge Info Add' },
+            { url: 'assets/img/projects/ev/11.png', caption: 'Charge Info Remov' },
+            { url: 'assets/img/projects/ev/12.png', caption: 'Saved Routes' },
+            { url: 'assets/img/projects/ev/13.png', caption: 'Not logged in' },
+            { url: 'assets/img/projects/ev/14.png', caption: 'Saved Routes' },
+            { url: 'assets/img/projects/ev/15.png', caption: 'Delete route' },
+            { url: 'assets/img/projects/ev/16.png', caption: 'Account' },
+            { url: 'assets/img/projects/ev/17.png', caption: 'My Details' },
+            
+        ]);
+    });	  
+
+
  /*   $('#gallery2').on('click', function (event) {
         event.preventDefault();
         Fresco.show([
