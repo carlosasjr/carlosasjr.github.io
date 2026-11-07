@@ -1,111 +1,127 @@
-$(document).ready(function () {
-    $(window).on('scroll', function () {
-        handleScrollTop();
-    });
+(() => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    //Close nav-item on click
-    $('.navbar-nav>li>a').on('click', function () {
-        $('.navbar-collapse').collapse('hide');
-    });
+  // Galeria: a miniatura troca a tela do notebook ou do celular do projeto.
+  document.querySelectorAll('[data-gallery]').forEach((gallery) => {
+    const windowZoom = gallery.querySelector('.window .zoom');
+    const caption = gallery.querySelector('.window-bar span:last-child');
+    const phoneZoom = gallery.querySelector('.phone');
+    const thumbs = gallery.querySelectorAll('.thumb');
 
-    //Portfolio Gallery
-    $('#gallery1').on('click', function (event) {
-        event.preventDefault();
-        Fresco.show([
-            { url: 'assets/img/projects/hotel/banner.png', caption: 'Map Reservation' },			
-			{ url: 'assets/img/projects/hotel/1.jpg', caption: 'Login Page' },            
-            { url: 'assets/img/projects/hotel/2.jpg', caption: 'Reservation Ads Page' },
-			{ url: 'assets/img/projects/hotel/3.jpg', caption: 'Home Page' }
-            
-        ]);
-    });
-	
-	
-	$('#gallery2').on('click', function (event) {
-        event.preventDefault();
-        Fresco.show([
-            { url: 'assets/img/projects/softproadv/processos.jpg', caption: 'Processes' },			
-			{ url: 'assets/img/projects/softproadv/detalhes-processo.jpg', caption: 'Processe details' },            
-            { url: 'assets/img/projects/softproadv/agenda.jpg', caption: 'Schedule' }           
-        ]);
-    });	
+    const show = (zoom, thumb) => {
+      const img = zoom.querySelector('img');
+      const apply = () => {
+        img.src = thumb.dataset.src;
+        img.alt = thumb.dataset.alt;
+        zoom.dataset.title = thumb.dataset.title;
+        zoom.setAttribute('aria-label', `Ampliar tela: ${thumb.dataset.title}`);
+        zoom.classList.remove('is-swapping');
+      };
 
+      if (reduceMotion) {
+        apply();
+        return;
+      }
 
-    $('#gallery3').on('click', function (event) {
-        event.preventDefault();
-        Fresco.show([
-            { url: 'assets/img/projects/pwa/screenshot-1.png', caption: 'Login' },
-            { url: 'assets/img/projects/pwa/screenshot-2.png', caption: 'New Company' },
-            { url: 'assets/img/projects/pwa/screenshot-3.png', caption: 'Home' },
-            { url: 'assets/img/projects/pwa/screenshot-4.png', caption: 'Menu' },
-            { url: 'assets/img/projects/pwa/screenshot-5.png', caption: 'Side Menu' },
-            { url: 'assets/img/projects/pwa/screenshot-6.png', caption: 'Clients' },
-            { url: 'assets/img/projects/pwa/screenshot-7.png', caption: 'Start New Sale' },            
-            { url: 'assets/img/projects/pwa/screenshot-9.png', caption: 'Products' },
-            { url: 'assets/img/projects/pwa/screenshot-10.png', caption: 'Add Product' },
-            { url: 'assets/img/projects/pwa/screenshot-11.png', caption: 'Checkout' },
-            { url: 'assets/img/projects/pwa/screenshot-12.png', caption: 'Add  Form Payments' },
-            { url: 'assets/img/projects/pwa/screenshot-13.png', caption: 'Checkout with Forms add' },
-            { url: 'assets/img/projects/pwa/screenshot-14.png', caption: 'List Sales' },
-            
-        ]);
-    });	
+      zoom.classList.add('is-swapping');
+      const preload = new Image();
+      preload.onload = () => setTimeout(apply, 120);
+      preload.onerror = apply;
+      preload.src = thumb.dataset.src;
+    };
 
+    thumbs.forEach((thumb) => {
+      thumb.addEventListener('click', () => {
+        const isPhone = thumb.dataset.kind === 'phone';
 
-  
-    $('#gallery4').on('click', function (event) {
-        event.preventDefault();
-        Fresco.show([
-            { url: 'assets/img/projects/ev/1.png', caption: 'Map' },
-            { url: 'assets/img/projects/ev/2.png', caption: 'Search Route' },
-            { url: 'assets/img/projects/ev/3.png', caption: 'Login' },
-            { url: 'assets/img/projects/ev/4.png', caption: 'Search From' },
-            { url: 'assets/img/projects/ev/5.png', caption: 'Search To' },
-            { url: 'assets/img/projects/ev/6.png', caption: 'Search Route' },
-            { url: 'assets/img/projects/ev/7.png', caption: 'Map' },            
-            { url: 'assets/img/projects/ev/9.png', caption: 'Show Route' },
-            { url: 'assets/img/projects/ev/10.png', caption: 'Charge Info Add' },
-            { url: 'assets/img/projects/ev/11.png', caption: 'Charge Info Remov' },
-            { url: 'assets/img/projects/ev/12.png', caption: 'Saved Routes' },
-            { url: 'assets/img/projects/ev/13.png', caption: 'Not logged in' },
-            { url: 'assets/img/projects/ev/14.png', caption: 'Saved Routes' },
-            { url: 'assets/img/projects/ev/15.png', caption: 'Delete route' },
-            { url: 'assets/img/projects/ev/16.png', caption: 'Account' },
-            { url: 'assets/img/projects/ev/17.png', caption: 'My Details' },
-            
-        ]);
-    });	  
+        thumbs.forEach((other) => {
+          if ((other.dataset.kind === 'phone') === isPhone) {
+            other.setAttribute('aria-pressed', String(other === thumb));
+          }
+        });
 
+        show(isPhone ? phoneZoom : windowZoom, thumb);
 
- /*   $('#gallery2').on('click', function (event) {
-        event.preventDefault();
-        Fresco.show([
-            { url: 'assets/img/projects/larachat/banner.png', caption: 'Home Page' },
-            { url: 'https://vimeo.com/456722569', caption: 'Video real time chat' }
-        ]);
-    });*/
-
-
-    //Set active tab on navbar
-    $(window).scroll(function () {
-        $(".nav-item").removeClass("active");
-        $(".active").parent().addClass("active");
-    });
-
-    handleScrollTop();
-    function handleScrollTop() {
-        let scrollTop = $(window).scrollTop();
-        if (scrollTop > 10) {
-            $('.navbar').addClass('active');
-        } else {
-            $('.navbar').removeClass('active');
+        if (!isPhone && caption) {
+          caption.textContent = thumb.dataset.title;
         }
-    }
+      });
+    });
+  });
 
-    //Animations
-    AOS.init({
-        disable: 'mobile', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-        duration: 2000, // values from 0 to 3000, with step 50ms
+  // Tela ampliada.
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = lightbox.querySelector('img');
+  const lightboxTitle = lightbox.querySelector('[data-title]');
+
+  document.querySelectorAll('.zoom').forEach((zoom) => {
+    zoom.addEventListener('click', () => {
+      const img = zoom.querySelector('img');
+      lightboxImg.src = img.currentSrc || img.src;
+      lightboxImg.alt = img.alt;
+      lightboxTitle.textContent = zoom.dataset.title || img.alt;
+      lightbox.showModal();
+    });
+  });
+
+  lightbox.querySelector('.lightbox-close').addEventListener('click', () => lightbox.close());
+  lightbox.addEventListener('click', (event) => {
+    if (event.target === lightbox) lightbox.close();
+  });
+
+  // Dica do histórico de commits.
+  const tip = document.createElement('div');
+  tip.className = 'tip mono';
+  tip.hidden = true;
+  document.body.append(tip);
+
+  const monthName = new Intl.DateTimeFormat('pt-BR', { month: 'short', year: 'numeric', timeZone: 'UTC' });
+
+  document.querySelectorAll('.heat-cells').forEach((cells) => {
+    cells.addEventListener('pointermove', (event) => {
+      const cell = event.target.closest('i');
+      if (!cell) {
+        tip.hidden = true;
+        return;
+      }
+
+      const total = Number(cell.dataset.n);
+      const when = monthName.format(new Date(`${cell.dataset.m}-15T00:00:00Z`)).replace('. de ', '/').replace(' de ', '/');
+      tip.textContent = `${when}: ${total} ${total === 1 ? 'commit' : 'commits'}`;
+      tip.hidden = false;
+
+      const x = Math.min(event.clientX + 12, window.innerWidth - tip.offsetWidth - 8);
+      tip.style.left = `${x}px`;
+      tip.style.top = `${event.clientY - 36}px`;
     });
 
-})
+    cells.addEventListener('pointerleave', () => {
+      tip.hidden = true;
+    });
+  });
+
+  // No celular o histórico abre nos meses mais recentes.
+  const scroller = document.querySelector('.heat-scroll');
+  if (scroller) scroller.scrollLeft = scroller.scrollWidth;
+
+  // Copiar e-mail.
+  document.querySelectorAll('[data-copy]').forEach((button) => {
+    const label = button.textContent;
+    button.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(button.dataset.copy);
+        button.textContent = 'Copiado';
+      } catch (error) {
+        const selection = window.getSelection();
+        const range = document.createRange();
+        range.selectNodeContents(button.previousElementSibling);
+        selection.removeAllRanges();
+        selection.addRange(range);
+        button.textContent = 'Selecionado';
+      }
+      setTimeout(() => {
+        button.textContent = label;
+      }, 2000);
+    });
+  });
+})();

@@ -1,557 +1,362 @@
 <!doctype html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
-    </link>
-
-    <!--Font Awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
-        integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-
-    <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700&display=swap" rel="stylesheet">
-
-    <!--Lightbox-->
-    <link rel="stylesheet" type="text/css" href="./assets/packages/frescojs/css/fresco.css" />
-
-    <!--AOS Animation-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!--Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    </link>
-
-    <!--Responsive CSS-->
-    <link rel="stylesheet" href="assets/css/responsive.css">
-
-
-
-    <title>Carlos Santos - Portfolio</title>
-
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Carlos Antônio dos Santos Júnior - Portfolio" />
-    <meta property="og:description" content="Web Developer - Portfolio" /> 
-	<meta property="og:image" content="https://avatars2.githubusercontent.com/u/43422181?s=460&u=3d210cdcbc571335421c5702a7577a4fd74f69d1&v=4">    
-    <meta property="og:url" content="https://carlosasjr.github.io/" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Carlos Santos Jr.</title>
+  <meta name="description" content="Carlos Santos Jr., desenvolvedor full stack desde 2003. ERP, CRM, app de vendas offline e plataforma esportiva em Laravel, Vue e Quasar, com telas reais de cada projeto.">
+  <meta name="author" content="Carlos Antônio dos Santos Júnior">
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Carlos Santos Jr. | Desenvolvedor full stack">
+  <meta property="og:description" content="Carlos Santos Jr., desenvolvedor full stack desde 2003. ERP, CRM, app de vendas offline e plataforma esportiva em Laravel, Vue e Quasar, com telas reais de cada projeto.">
+  <meta property="og:url" content="https://carlosasjr.github.io/">
+  <meta property="og:image" content="https://carlosasjr.github.io/assets/img/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232340e0'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='16' font-weight='800' fill='%23fff' text-anchor='middle'%3ECS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Carlos Antônio dos Santos Júnior", "alternateName": "Carlos Santos Jr.", "jobTitle": "Desenvolvedor full stack", "address": {"@type": "PostalAddress", "addressLocality": "Aparecida", "addressRegion": "SP", "addressCountry": "BR"}, "sameAs": ["https://www.linkedin.com/in/carlos-santosjr/", "https://github.com/carlosasjr"]}</script>
 </head>
+<body>
+  <a class="skip" href="#projetos">Ir para os projetos</a>
 
-<body data-spy="scroll" data-target="#main-nav" data-offset="20">
-
-    <!--Header-->
-    <header class="header">
-        <nav id="main-nav" class="navbar navbar-expand-lg fixed-top py-3">
-            <div class="container">
-                <a class="navbar-brand" href="#home">
-                    &lt; CS &gt;
-                    <span class="blinking">_</span>
-                </a>
-
-                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-                    class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
-                <div id="navbarSupportedContent" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#resume">Resume</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!--End Header-->
-
-    <!--Banner-->
-    <div id="home" class="slider-area">
-        <div class="single-slider height-100vh">
-            <div class="container">
-                <div class="slider-middle">
-                    <div class="single-slider-all" data-aos="fade-up">
-                        <div class="slider-title">
-                            <h1>Hello I'm Carlos</h1>
-                            <h2>&lt; Web Developer / &gt;</h2>
-                        </div>
-                        <div class="slider-icon">
-                            <ul>
-                                <li><a href="https://github.com/carlosasjr" target="_blank"><i
-                                            class="fab fa-github"></i></a></li>                                
-                                <li><a href="https://www.linkedin.com/in/carlos-santosjr/"
-                                        target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a href="#about" class="mouse">
-                <span class="mouse-icon">
-                    <span class="mouse-wheel"></span>
-                </span>
-            </a>
-        </div>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="brand" href="#topo">Carlos Santos Jr.</a>
+      <nav class="site-nav" aria-label="Seções">
+        <a href="#projetos">Projetos</a>
+        <a href="#curriculo">Currículo</a>
+        <a href="#contato">Contato</a>
+      </nav>
     </div>
-    <!--End Banner-->
+  </header>
 
-    <!--About-->
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8" data-aos="fade-right">
-                    <h1 class="title">About me</h1>
-                    <div class="my-4">
-                        <p>My name is Carlos A. Santos Júnior, I'm a web developer from Brazil.</p>
-                        <p>I've been spending my time in the last 10 years studying new technologies and trends, in order
-                            to
-                            be able to turn ideas into a business, safely, quickly, and reliably.</p>
-                    </div>
-
-                    <table class="table borderless table-sm">
-                        <tbody>
-                            <tr>
-                                <th scope="row">Name:</th>
-                                <td>Carlos Antônio dos Santos Júnior</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Date of Birth:</th>
-                                <td>Jun 23, 1984</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Address:</th>
-                                <td>Aparecida/SP, Brazil</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Email:</th>
-                                <td>carlosasjr2003@hotmail.com</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Phone:</th>
-                                <td>+55 (12) 98154-4374</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <h2>Languages</h2>
-                    <table class="table borderless table-sm">
-                        <tbody>
-                            <tr>
-                                <th scope="row">Portuguese:</th>
-                                <td>Native</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">English:</th>
-                                <td>Intermediate</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </div>
-                <div class="col-lg-4" data-aos="fade-left">
-                    <div class="user-image"></div>
-                </div>
-            </div>
+  <main id="topo">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+        <div class="hero-head">
+          <p class="eyebrow mono">Desenvolvedor full stack · Aparecida, SP · desde 2003</p>
+          <h1 id="hero-title">Sistemas de gestão completos, do banco de dados ao celular.</h1>
         </div>
-    </section>
-    <!--End About-->
-
-    <!--Resume-->
-    <section id="resume" class="bg-light">
-        <div class="container">
-            <h1 class="title" data-aos="fade-right">Resume</h1>
-            <div class="row">
-                <!--Experience-->
-                <div class="col" data-aos="fade-up" data-aos-duration="1000">
-                    <h2>Experience</h2> 
-                    <ul class="timeline">
-                        <li>
-                            <div class="text-topic text-primary">2018-Present</div>
-                            <div class="subtitle">SoftPro Sistemas</div>
-                            <div>Backend Developer with PHP Laravel / VueJs</div>
-                        </li>
-                        <li>
-                            <div class="text-topic text-primary">2011-2017</div>
-                            <div class="subtitle">The Place Sistemas</div>
-                            <div>Developer Delphi</div>
-                        </li>
-                        <li>
-                            <div class="text-topic text-primary">2005-2010</div>
-                            <div class="subtitle">C.Ss.R Editora Santuário</div>
-                            <div>Developer Delphi</div>
-                        </li>
-                        <li>
-                            <div class="text-topic text-primary">2003-2005</div>
-                            <div class="subtitle">D.M.S Data System</div>
-                            <div>Developer Delphi and DataFlex</div>
-                        </li>
-                    </ul>
-                </div>
-
-                <!--Education-->
-                <div class="col" data-aos="fade-up">
-                    <h2>Education</h2>
-                    <ul class="timeline">
-                        <li>
-                            <div class="text-topic text-primary">2018-2021</div>
-                            <div class="subtitle">Bachelor of Information Systems</div>
-                            <div>Fatec - Guaratinguetá</div>
-                        </li>
-                        <li>
-                            <div class="text-topic text-primary">1999-2001</div>
-                            <div class="subtitle">Computer Technician</div>
-                            <div>ENIAC - Informática</div>
-                        </li>
-                    </ul>
-                </div>
-				
-                <!--Courses-->
-                <div class="col" data-aos="fade-up">
-                    <h2>Courses</h2>
-                    <ul class="timeline">
-                        <li>
-                            <div class="text-topic text-primary">marc/2022</div>
-                            <div class="subtitle">Docker</div>
-                            <div>Especializa T.I</div>
-                        <li>	                     
-                        <li>
-                            <div class="text-topic text-primary">fev/2022</div>
-                            <div class="subtitle">Curso Laravel CI/CD com GitHub Actions</div>
-                            <div>Especializa T.I</div>
-                        <li>	
-						<li>
-                            <div class="text-topic text-primary">nov/2020</div>
-                            <div class="subtitle">E-commerce - API RestFull Laravel with Vue JS 2</div>
-                            <div>Especializa T.I</div>
-                        <li>	
-                        <li>
-                            <div class="text-topic text-primary">out/2020</div>
-                            <div class="subtitle">Vue JS 2</div>
-                            <div>Especializa T.I</div>
-                        <li>					
-					
-                        <li>
-                            <div class="text-topic text-primary">jul/2020</div>
-                            <div class="subtitle">API Rest - Laravel</div>
-                            <div>Code Express</div>
-                        <li>
-                            <div class="text-topic text-primary">abr/2020</div>
-                            <div class="subtitle">Laravel Advanced</div>
-                            <div>Treina Web</div>
-                        </li>
-						
-						<li>
-                            <div class="text-topic text-primary">out/2019</div>
-                            <div class="subtitle">Laravel Repository Pattern</div>
-                            <div>Especializa T.I</div>
-                        </li>
-						
-						<li>
-                            <div class="text-topic text-primary">out/2019</div>
-                            <div class="subtitle">ACL and MultiTenancy</div>
-                            <div>Especializa T.I</div>
-                        </li>
-						
-						<li>
-                            <div class="text-topic text-primary">set/2019</div>
-                            <div class="subtitle">Paypal</div>
-                            <div>Especializa T.I</div>
-                        </li>	
-                        
-						<li>
-                            <div class="text-topic text-primary">Jan/2019</div>
-                            <div class="subtitle">PHP OOP Advanced</div>
-                            <div>UpInside Treinamentos</div>
-                        </li>
-						
-						<li>
-                            <div class="text-topic text-primary">Jan/2011</div>
-                            <div class="subtitle">Delphi 2007 Developer</div>
-                            <div>TDS Tecnologia</div>
-                        </li>						
-                    </ul>
-                </div>				
-
-
-            </div>
-			
-			   <div class="row">
-	            <!--Certifications-->
-                <div class="col" data-aos="fade-up" data-aos-duration="3000">
-                    <h2>Certifications</h2>
-                    <div class="certifications">
-                        <ul class="timeline">
-                            <li>CCNA Routing and Switching: Introduction to NetWorks - Cisco</li>
-                            <li>Scrum Foundation Professional Certificate (SFPC)</li>
-                            <li>Certificate Cisco IT Essentials</li>
-                        </ul>
-                    </div>
-                </div>
-			   </div
+        <div class="hero-text">
+          <p class="hero-lead"><strong>Sou Carlos Santos Jr.</strong> Faço software para empresas há mais de 20 anos: ERP, CRM, app de vendas offline e plataforma para escolas de futebol. Trabalho com Laravel, Vue e Quasar, e sei levar para a web o legado em Delphi e Firebird.</p>
+          <div class="actions">
+            <a class="btn" href="#projetos">Ver os projetos</a>
+            <a class="text-link" href="https://www.linkedin.com/in/carlos-santosjr/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="text-link" href="https://github.com/carlosasjr" target="_blank" rel="noopener">GitHub</a>
+          </div>
         </div>
-    </section>
-    <!--End Resume-->
-	
-	
-
-    <!--Skills-->
-    <section id="skills">
-        <div class="container">
-            <h1 class="title" data-aos="fade-right">Skills & Tools</h1>
-            <div class="row align-flex-end" data-aos="fade-up">
-                <!--Front End-->
-                <div class="col-lg-4">
-                    <h2 class="text-center">Frontend</h2>
-                    <div class="custom-card">
-                        <div class="table">
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Javascript</li>
-                                <li>Jquery</li>
-                                <li>Bootstrap</li>                                
-                                <li>VueJs 2 / 3</li>
-                                <li>Quasar Framework</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Back End-->
-                <div class="col-lg-4">
-                    <h2 class="text-center">Backend</h2>
-                    <div class="custom-card">
-                        <div class="table">
-                            <ul>
-                                <li>PHP 8</li>
-                                <li>Laravel</li>                                
-                                <li>WebSocket</li>  
-								<li>Restful API</li>
-                                <li>OAuth / JWT / Sanctum</li>                                
-                                <li>OOP</li>                                
-                                <li>Delphi</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Others-->
-                <div class="col-lg-4">
-                    <h2 class="text-center">Others</h2>
-                    <div class="custom-card">
-                        <div class="table">
-                            <ul>
-							    <li>Clean Code</li>
-                                <li>Git</li>     
-                                <li>CI / CD</li>                                 
-                                <li>Apache / Nginx</li>                                
-                                <li>SQL Server / FireBird / MySQL</li>																
-                                <li>Agile / Scrum / Kamban</li>	
-                                <li>Docker</li>															
-                            </ul>
-                        </div>
-                    </div>
-                </div>			
-            </div>
-			
-			<div class="row justify-content-md-center" data-aos="fade-up">
-			   <!--Soft Skills-->
-                <div class="col-lg-4">
-                    <h2 class="text-center">Soft Skills</h2>
-                    <div class="custom-card">
-                        <div class="table">
-                            <ul>
-							    <li>Empathy</li>
-                                <li>Communication</li>                                    
-                                <li>Perseverance</li>                                
-                                <li>Resilience with flexibility</li>								
-								<li>Self-taught</li>
-								<li>Organization</li>								
-                            </ul>
-                        </div>
-                    </div>
-                </div>	
-			</div>
+        <div class="collage" aria-label="Telas de três dos sistemas apresentados" role="img">
+          <div class="collage-back"><img src="assets/img/footschool/financeiro.webp" width="1600" height="900" alt="" fetchpriority="high"></div>
+          <div class="collage-mid"><img src="assets/img/conecta/pipeline.webp" width="1600" height="1000" alt=""></div>
+          <div class="collage-phone"><img src="assets/img/distribuidora/gestor-home-celular.webp" width="640" height="1336" alt=""></div>
         </div>
-
+      </div>
     </section>
-    <!--End Skills-->
 
-    <!--Portfolio-->
-    <section id="portfolio" class="bg-light">
-        <h1 class="title" data-aos="fade-right">Portfolio</h1>
-        <div class="container" data-aos="fade-up">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card mb-4">
-                        <img src="./assets/img/projects/hotel/banner.png" class="card-img-top" alt="..."
-                            style="width: 100%; height: 225px;">
-                        <div class="card-body">
-                            <h5>Agille Hotel</h5>
-                            <p class="card-text">A Hotel reservation system.</p>
-							<p>Multitenancy | ACL | Paypal</>
-                            <div class="my-2">
-                                <span class="badge badge-pill badge-dark">Laravel</span>
-								<span class="badge badge-pill badge-dark">JQuery</span>
-								<span class="badge badge-pill badge-dark">Ajax</span>
-								<span class="badge badge-pill badge-dark">Bootstrap</span>
-                                <span class="badge badge-pill badge-dark">Mysql</span>
-                            </div>
-
-                            <div class="d-flex justify-content-between mt-3">
-                                <button id="gallery1" type="button" class="btn btn-outline-primary ">View
-                                    Project</button>
-                         <a class="btn btn-outline-primary" href="https://github.com/carlosasjr/agilehotel"
-                                    target="_blank">View Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-				
-				
-                <div class="col-lg-4">
-                    <div class="card mb-4">
-                        <img src="./assets/img/projects/softproadv/processos.jpg" class="card-img-top" alt="..."
-                            style="width: 100%; height: 225px;">
-                        <div class="card-body">
-                            <h5>SoftPro Advogados</h5>
-                            <p class="card-text">A lawyer management system.</p>
-							<p>Multitenancy | ACL | Paypal | FullCalendar </>
-                            <div class="my-2">
-                                <span class="badge badge-pill badge-dark">Laravel</span>
-                                <span class="badge badge-pill badge-dark">Websockets</span>
-								<span class="badge badge-pill badge-dark">JQuery</span>
-								<span class="badge badge-pill badge-dark">Ajax</span>
-                                <span class="badge badge-pill badge-dark">Vue</span>                                
-								<span class="badge badge-pill badge-dark">Bootstrap</span>
-                                <span class="badge badge-pill badge-dark">Mysql</span>
-                            </div>
-
-                            <div class="d-flex justify-content-between mt-3">
-                                <button id="gallery2" type="button" class="btn btn-outline-primary ">View
-                                    Project</button>
-								<a class="btn btn-outline-primary" href="https://github.com/carlosasjr/softproadv"
-                                    target="_blank">View Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>	
-                
-                
-
-                <div class="col-lg-4">
-                    <div class="card mb-4">
-                        <img src="./assets/img/projects/pwa/screenshot-11.png" class="card-img-top" alt="..."
-                            style="width: 100%; height: 225px;">
-                        <div class="card-body">
-                            <h5>SoftPro +Vendas</h5>
-                            <p class="card-text">A PWA Application.</p>
-							<p>API - Laravel | VueJs | Quasar | LocalBase | OffLine | Sync with ERP Delphi </>
-                            <div class="my-2">
-                                <span class="badge badge-pill badge-dark">Laravel</span>
-								<span class="badge badge-pill badge-dark">VueJs</span>
-								<span class="badge badge-pill badge-dark">Quasar</span>
-								<span class="badge badge-pill badge-dark">LocalBase</span>
-                                <span class="badge badge-pill badge-dark">OffLine</span>
-                            </div>
-
-                            <div class="d-flex justify-content-between mt-3">
-                                <button id="gallery3" type="button" class="btn btn-outline-primary ">View
-                                    Project</button>
-								<a class="btn btn-outline-primary" href="https://github.com/carlosasjr/app-vendas-pwa"
-                                    target="_blank">PWA Code</a>
-                                <a class="btn btn-outline-primary" href="https://github.com/carlosasjr/app-vendas-api"
-                                    target="_blank">API Code</a>                                    
-                            </div>
-                        </div>
-                    </div>
-                </div>	   
-                
-                
-   
-                <div class="col-lg-4">
-                    <div class="card mb-4">
-                        <img src="./assets/img/projects/ev/1.png" class="card-img-top" alt="..."
-                            style="width: 100%; height: 225px;">
-                        <div class="card-body">
-                            <h5>Ev Charge Map</h5>
-                            <p class="card-text">A Full stack application with Vue 3, Laravel, Google Maps, Pinia, Javascript, PHP, and API. <br> 
-                                As a Progressive Web App (PWA) also using Laravel Sanctum for backend authentication and Pinia state management in Quasar..</p>
-							<p>API - Laravel | VueJs 3 | Pinia | Quasar Framework | Google Maps </>
-                            <div class="my-2">
-                                <span class="badge badge-pill badge-dark">Laravel</span>
-								<span class="badge badge-pill badge-dark">VueJs 3</span>
-								<span class="badge badge-pill badge-dark">Pinia</span>
-								<span class="badge badge-pill badge-dark">Quasar Framework</span>
-								<span class="badge badge-pill badge-dark">Google Maps</span>
-                            </div>
-
-                            <div class="d-flex justify-content-between mt-3">
-                                <button id="gallery4" type="button" class="btn btn-outline-primary ">View
-                                    Project</button>
-								<a class="btn btn-outline-primary" href="https://github.com/carlosasjr/ev-charge-map"
-                                    target="_blank">PWA Code</a>
-                                <a class="btn btn-outline-primary" href="https://github.com/carlosasjr/ev-charge-map-api"
-                                    target="_blank">API Code</a>                                    
-                            </div>
-                        </div>
-                    </div>
-                </div>	             
-            </div>
+    <section class="history" aria-labelledby="history-title">
+      <div class="wrap">
+        <div class="history-head">
+          <h2 class="section-title" id="history-title">3.563 commits em cinco sistemas</h2>
+          <p>Cada coluna é um mês, de novembro de 2019 a novembro de 2026. O ritmo de 2026 vem de um processo com especificação, ADRs, code review e agentes de IA trabalhando junto comigo.</p>
         </div>
-		
-
-
+        <div class="heat-scroll" tabindex="0" role="group" aria-label="Commits por mês em cada sistema">
+<div class="heat">
+  <div class="heat-axis"><span></span><div class="heat-years" aria-hidden="true"><span class="mono" style="grid-column:3 / span 12">2020</span><span class="mono" style="grid-column:15 / span 12">2021</span><span class="mono" style="grid-column:27 / span 12">2022</span><span class="mono" style="grid-column:39 / span 12">2023</span><span class="mono" style="grid-column:51 / span 12">2024</span><span class="mono" style="grid-column:63 / span 12">2025</span><span class="mono" style="grid-column:75 / span 11">2026</span></div><span></span></div>
+  <div class="heat-row"><a class="heat-name" href="#advogados">SoftPro Advogado</a><div class="heat-cells" role="img" aria-label="SoftPro Advogado: 350 commits, de 2019-11 a 2023-03"><i class="h1" data-m="2019-11" data-n="5"></i><i class="h1" data-m="2019-12" data-n="2"></i><i class="h0" data-m="2020-01" data-n="0"></i><i class="h1" data-m="2020-02" data-n="6"></i><i class="h1" data-m="2020-03" data-n="5"></i><i class="h2" data-m="2020-04" data-n="18"></i><i class="h1" data-m="2020-05" data-n="1"></i><i class="h0" data-m="2020-06" data-n="0"></i><i class="h1" data-m="2020-07" data-n="1"></i><i class="h1" data-m="2020-08" data-n="7"></i><i class="h1" data-m="2020-09" data-n="3"></i><i class="h0" data-m="2020-10" data-n="0"></i><i class="h0" data-m="2020-11" data-n="0"></i><i class="h0" data-m="2020-12" data-n="0"></i><i class="h0" data-m="2021-01" data-n="0"></i><i class="h0" data-m="2021-02" data-n="0"></i><i class="h0" data-m="2021-03" data-n="0"></i><i class="h0" data-m="2021-04" data-n="0"></i><i class="h1" data-m="2021-05" data-n="3"></i><i class="h2" data-m="2021-06" data-n="23"></i><i class="h3" data-m="2021-07" data-n="54"></i><i class="h4" data-m="2021-08" data-n="81"></i><i class="h3" data-m="2021-09" data-n="49"></i><i class="h3" data-m="2021-10" data-n="46"></i><i class="h0" data-m="2021-11" data-n="0"></i><i class="h0" data-m="2021-12" data-n="0"></i><i class="h0" data-m="2022-01" data-n="0"></i><i class="h0" data-m="2022-02" data-n="0"></i><i class="h0" data-m="2022-03" data-n="0"></i><i class="h0" data-m="2022-04" data-n="0"></i><i class="h0" data-m="2022-05" data-n="0"></i><i class="h0" data-m="2022-06" data-n="0"></i><i class="h0" data-m="2022-07" data-n="0"></i><i class="h0" data-m="2022-08" data-n="0"></i><i class="h3" data-m="2022-09" data-n="44"></i><i class="h0" data-m="2022-10" data-n="0"></i><i class="h0" data-m="2022-11" data-n="0"></i><i class="h0" data-m="2022-12" data-n="0"></i><i class="h0" data-m="2023-01" data-n="0"></i><i class="h0" data-m="2023-02" data-n="0"></i><i class="h1" data-m="2023-03" data-n="2"></i><i class="h0" data-m="2023-04" data-n="0"></i><i class="h0" data-m="2023-05" data-n="0"></i><i class="h0" data-m="2023-06" data-n="0"></i><i class="h0" data-m="2023-07" data-n="0"></i><i class="h0" data-m="2023-08" data-n="0"></i><i class="h0" data-m="2023-09" data-n="0"></i><i class="h0" data-m="2023-10" data-n="0"></i><i class="h0" data-m="2023-11" data-n="0"></i><i class="h0" data-m="2023-12" data-n="0"></i><i class="h0" data-m="2024-01" data-n="0"></i><i class="h0" data-m="2024-02" data-n="0"></i><i class="h0" data-m="2024-03" data-n="0"></i><i class="h0" data-m="2024-04" data-n="0"></i><i class="h0" data-m="2024-05" data-n="0"></i><i class="h0" data-m="2024-06" data-n="0"></i><i class="h0" data-m="2024-07" data-n="0"></i><i class="h0" data-m="2024-08" data-n="0"></i><i class="h0" data-m="2024-09" data-n="0"></i><i class="h0" data-m="2024-10" data-n="0"></i><i class="h0" data-m="2024-11" data-n="0"></i><i class="h0" data-m="2024-12" data-n="0"></i><i class="h0" data-m="2025-01" data-n="0"></i><i class="h0" data-m="2025-02" data-n="0"></i><i class="h0" data-m="2025-03" data-n="0"></i><i class="h0" data-m="2025-04" data-n="0"></i><i class="h0" data-m="2025-05" data-n="0"></i><i class="h0" data-m="2025-06" data-n="0"></i><i class="h0" data-m="2025-07" data-n="0"></i><i class="h0" data-m="2025-08" data-n="0"></i><i class="h0" data-m="2025-09" data-n="0"></i><i class="h0" data-m="2025-10" data-n="0"></i><i class="h0" data-m="2025-11" data-n="0"></i><i class="h0" data-m="2025-12" data-n="0"></i><i class="h0" data-m="2026-01" data-n="0"></i><i class="h0" data-m="2026-02" data-n="0"></i><i class="h0" data-m="2026-03" data-n="0"></i><i class="h0" data-m="2026-04" data-n="0"></i><i class="h0" data-m="2026-05" data-n="0"></i><i class="h0" data-m="2026-06" data-n="0"></i><i class="h0" data-m="2026-07" data-n="0"></i><i class="h0" data-m="2026-08" data-n="0"></i><i class="h0" data-m="2026-09" data-n="0"></i><i class="h0" data-m="2026-10" data-n="0"></i><i class="h0" data-m="2026-11" data-n="0"></i></div><span class="heat-total mono">350</span></div>
+  <div class="heat-row"><a class="heat-name" href="#distribuidora">+Vendas e Gestor</a><div class="heat-cells" role="img" aria-label="+Vendas e Gestor: 1.235 commits, de 2022-10 a 2026-11"><i class="h0" data-m="2019-11" data-n="0"></i><i class="h0" data-m="2019-12" data-n="0"></i><i class="h0" data-m="2020-01" data-n="0"></i><i class="h0" data-m="2020-02" data-n="0"></i><i class="h0" data-m="2020-03" data-n="0"></i><i class="h0" data-m="2020-04" data-n="0"></i><i class="h0" data-m="2020-05" data-n="0"></i><i class="h0" data-m="2020-06" data-n="0"></i><i class="h0" data-m="2020-07" data-n="0"></i><i class="h0" data-m="2020-08" data-n="0"></i><i class="h0" data-m="2020-09" data-n="0"></i><i class="h0" data-m="2020-10" data-n="0"></i><i class="h0" data-m="2020-11" data-n="0"></i><i class="h0" data-m="2020-12" data-n="0"></i><i class="h0" data-m="2021-01" data-n="0"></i><i class="h0" data-m="2021-02" data-n="0"></i><i class="h0" data-m="2021-03" data-n="0"></i><i class="h0" data-m="2021-04" data-n="0"></i><i class="h0" data-m="2021-05" data-n="0"></i><i class="h0" data-m="2021-06" data-n="0"></i><i class="h0" data-m="2021-07" data-n="0"></i><i class="h0" data-m="2021-08" data-n="0"></i><i class="h0" data-m="2021-09" data-n="0"></i><i class="h0" data-m="2021-10" data-n="0"></i><i class="h0" data-m="2021-11" data-n="0"></i><i class="h0" data-m="2021-12" data-n="0"></i><i class="h0" data-m="2022-01" data-n="0"></i><i class="h0" data-m="2022-02" data-n="0"></i><i class="h0" data-m="2022-03" data-n="0"></i><i class="h0" data-m="2022-04" data-n="0"></i><i class="h0" data-m="2022-05" data-n="0"></i><i class="h0" data-m="2022-06" data-n="0"></i><i class="h0" data-m="2022-07" data-n="0"></i><i class="h0" data-m="2022-08" data-n="0"></i><i class="h0" data-m="2022-09" data-n="0"></i><i class="h1" data-m="2022-10" data-n="5"></i><i class="h2" data-m="2022-11" data-n="10"></i><i class="h1" data-m="2022-12" data-n="2"></i><i class="h2" data-m="2023-01" data-n="13"></i><i class="h1" data-m="2023-02" data-n="9"></i><i class="h1" data-m="2023-03" data-n="7"></i><i class="h0" data-m="2023-04" data-n="0"></i><i class="h0" data-m="2023-05" data-n="0"></i><i class="h1" data-m="2023-06" data-n="7"></i><i class="h4" data-m="2023-07" data-n="98"></i><i class="h2" data-m="2023-08" data-n="22"></i><i class="h2" data-m="2023-09" data-n="12"></i><i class="h2" data-m="2023-10" data-n="16"></i><i class="h1" data-m="2023-11" data-n="9"></i><i class="h0" data-m="2023-12" data-n="0"></i><i class="h0" data-m="2024-01" data-n="0"></i><i class="h0" data-m="2024-02" data-n="0"></i><i class="h2" data-m="2024-03" data-n="25"></i><i class="h2" data-m="2024-04" data-n="23"></i><i class="h3" data-m="2024-05" data-n="40"></i><i class="h2" data-m="2024-06" data-n="27"></i><i class="h2" data-m="2024-07" data-n="26"></i><i class="h3" data-m="2024-08" data-n="40"></i><i class="h1" data-m="2024-09" data-n="8"></i><i class="h3" data-m="2024-10" data-n="30"></i><i class="h2" data-m="2024-11" data-n="24"></i><i class="h1" data-m="2024-12" data-n="4"></i><i class="h1" data-m="2025-01" data-n="5"></i><i class="h2" data-m="2025-02" data-n="17"></i><i class="h2" data-m="2025-03" data-n="21"></i><i class="h1" data-m="2025-04" data-n="8"></i><i class="h2" data-m="2025-05" data-n="13"></i><i class="h3" data-m="2025-06" data-n="39"></i><i class="h2" data-m="2025-07" data-n="29"></i><i class="h1" data-m="2025-08" data-n="7"></i><i class="h2" data-m="2025-09" data-n="25"></i><i class="h3" data-m="2025-10" data-n="34"></i><i class="h1" data-m="2025-11" data-n="3"></i><i class="h3" data-m="2025-12" data-n="35"></i><i class="h1" data-m="2026-01" data-n="3"></i><i class="h1" data-m="2026-02" data-n="3"></i><i class="h2" data-m="2026-03" data-n="28"></i><i class="h1" data-m="2026-04" data-n="1"></i><i class="h3" data-m="2026-05" data-n="37"></i><i class="h3" data-m="2026-06" data-n="52"></i><i class="h4" data-m="2026-07" data-n="92"></i><i class="h4" data-m="2026-08" data-n="120"></i><i class="h4" data-m="2026-09" data-n="187"></i><i class="h2" data-m="2026-10" data-n="17"></i><i class="h1" data-m="2026-11" data-n="2"></i></div><span class="heat-total mono">1.235</span></div>
+  <div class="heat-row"><a class="heat-name" href="#footschool">FootSchool</a><div class="heat-cells" role="img" aria-label="FootSchool: 692 commits, de 2026-06 a 2026-10"><i class="h0" data-m="2019-11" data-n="0"></i><i class="h0" data-m="2019-12" data-n="0"></i><i class="h0" data-m="2020-01" data-n="0"></i><i class="h0" data-m="2020-02" data-n="0"></i><i class="h0" data-m="2020-03" data-n="0"></i><i class="h0" data-m="2020-04" data-n="0"></i><i class="h0" data-m="2020-05" data-n="0"></i><i class="h0" data-m="2020-06" data-n="0"></i><i class="h0" data-m="2020-07" data-n="0"></i><i class="h0" data-m="2020-08" data-n="0"></i><i class="h0" data-m="2020-09" data-n="0"></i><i class="h0" data-m="2020-10" data-n="0"></i><i class="h0" data-m="2020-11" data-n="0"></i><i class="h0" data-m="2020-12" data-n="0"></i><i class="h0" data-m="2021-01" data-n="0"></i><i class="h0" data-m="2021-02" data-n="0"></i><i class="h0" data-m="2021-03" data-n="0"></i><i class="h0" data-m="2021-04" data-n="0"></i><i class="h0" data-m="2021-05" data-n="0"></i><i class="h0" data-m="2021-06" data-n="0"></i><i class="h0" data-m="2021-07" data-n="0"></i><i class="h0" data-m="2021-08" data-n="0"></i><i class="h0" data-m="2021-09" data-n="0"></i><i class="h0" data-m="2021-10" data-n="0"></i><i class="h0" data-m="2021-11" data-n="0"></i><i class="h0" data-m="2021-12" data-n="0"></i><i class="h0" data-m="2022-01" data-n="0"></i><i class="h0" data-m="2022-02" data-n="0"></i><i class="h0" data-m="2022-03" data-n="0"></i><i class="h0" data-m="2022-04" data-n="0"></i><i class="h0" data-m="2022-05" data-n="0"></i><i class="h0" data-m="2022-06" data-n="0"></i><i class="h0" data-m="2022-07" data-n="0"></i><i class="h0" data-m="2022-08" data-n="0"></i><i class="h0" data-m="2022-09" data-n="0"></i><i class="h0" data-m="2022-10" data-n="0"></i><i class="h0" data-m="2022-11" data-n="0"></i><i class="h0" data-m="2022-12" data-n="0"></i><i class="h0" data-m="2023-01" data-n="0"></i><i class="h0" data-m="2023-02" data-n="0"></i><i class="h0" data-m="2023-03" data-n="0"></i><i class="h0" data-m="2023-04" data-n="0"></i><i class="h0" data-m="2023-05" data-n="0"></i><i class="h0" data-m="2023-06" data-n="0"></i><i class="h0" data-m="2023-07" data-n="0"></i><i class="h0" data-m="2023-08" data-n="0"></i><i class="h0" data-m="2023-09" data-n="0"></i><i class="h0" data-m="2023-10" data-n="0"></i><i class="h0" data-m="2023-11" data-n="0"></i><i class="h0" data-m="2023-12" data-n="0"></i><i class="h0" data-m="2024-01" data-n="0"></i><i class="h0" data-m="2024-02" data-n="0"></i><i class="h0" data-m="2024-03" data-n="0"></i><i class="h0" data-m="2024-04" data-n="0"></i><i class="h0" data-m="2024-05" data-n="0"></i><i class="h0" data-m="2024-06" data-n="0"></i><i class="h0" data-m="2024-07" data-n="0"></i><i class="h0" data-m="2024-08" data-n="0"></i><i class="h0" data-m="2024-09" data-n="0"></i><i class="h0" data-m="2024-10" data-n="0"></i><i class="h0" data-m="2024-11" data-n="0"></i><i class="h0" data-m="2024-12" data-n="0"></i><i class="h0" data-m="2025-01" data-n="0"></i><i class="h0" data-m="2025-02" data-n="0"></i><i class="h0" data-m="2025-03" data-n="0"></i><i class="h0" data-m="2025-04" data-n="0"></i><i class="h0" data-m="2025-05" data-n="0"></i><i class="h0" data-m="2025-06" data-n="0"></i><i class="h0" data-m="2025-07" data-n="0"></i><i class="h0" data-m="2025-08" data-n="0"></i><i class="h0" data-m="2025-09" data-n="0"></i><i class="h0" data-m="2025-10" data-n="0"></i><i class="h0" data-m="2025-11" data-n="0"></i><i class="h0" data-m="2025-12" data-n="0"></i><i class="h0" data-m="2026-01" data-n="0"></i><i class="h0" data-m="2026-02" data-n="0"></i><i class="h0" data-m="2026-03" data-n="0"></i><i class="h0" data-m="2026-04" data-n="0"></i><i class="h0" data-m="2026-05" data-n="0"></i><i class="h5" data-m="2026-06" data-n="227"></i><i class="h4" data-m="2026-07" data-n="195"></i><i class="h4" data-m="2026-08" data-n="155"></i><i class="h3" data-m="2026-09" data-n="51"></i><i class="h3" data-m="2026-10" data-n="64"></i><i class="h0" data-m="2026-11" data-n="0"></i></div><span class="heat-total mono">692</span></div>
+  <div class="heat-row"><a class="heat-name" href="#conecta">Conecta Cerâmica</a><div class="heat-cells" role="img" aria-label="Conecta Cerâmica: 432 commits, de 2026-07 a 2026-10"><i class="h0" data-m="2019-11" data-n="0"></i><i class="h0" data-m="2019-12" data-n="0"></i><i class="h0" data-m="2020-01" data-n="0"></i><i class="h0" data-m="2020-02" data-n="0"></i><i class="h0" data-m="2020-03" data-n="0"></i><i class="h0" data-m="2020-04" data-n="0"></i><i class="h0" data-m="2020-05" data-n="0"></i><i class="h0" data-m="2020-06" data-n="0"></i><i class="h0" data-m="2020-07" data-n="0"></i><i class="h0" data-m="2020-08" data-n="0"></i><i class="h0" data-m="2020-09" data-n="0"></i><i class="h0" data-m="2020-10" data-n="0"></i><i class="h0" data-m="2020-11" data-n="0"></i><i class="h0" data-m="2020-12" data-n="0"></i><i class="h0" data-m="2021-01" data-n="0"></i><i class="h0" data-m="2021-02" data-n="0"></i><i class="h0" data-m="2021-03" data-n="0"></i><i class="h0" data-m="2021-04" data-n="0"></i><i class="h0" data-m="2021-05" data-n="0"></i><i class="h0" data-m="2021-06" data-n="0"></i><i class="h0" data-m="2021-07" data-n="0"></i><i class="h0" data-m="2021-08" data-n="0"></i><i class="h0" data-m="2021-09" data-n="0"></i><i class="h0" data-m="2021-10" data-n="0"></i><i class="h0" data-m="2021-11" data-n="0"></i><i class="h0" data-m="2021-12" data-n="0"></i><i class="h0" data-m="2022-01" data-n="0"></i><i class="h0" data-m="2022-02" data-n="0"></i><i class="h0" data-m="2022-03" data-n="0"></i><i class="h0" data-m="2022-04" data-n="0"></i><i class="h0" data-m="2022-05" data-n="0"></i><i class="h0" data-m="2022-06" data-n="0"></i><i class="h0" data-m="2022-07" data-n="0"></i><i class="h0" data-m="2022-08" data-n="0"></i><i class="h0" data-m="2022-09" data-n="0"></i><i class="h0" data-m="2022-10" data-n="0"></i><i class="h0" data-m="2022-11" data-n="0"></i><i class="h0" data-m="2022-12" data-n="0"></i><i class="h0" data-m="2023-01" data-n="0"></i><i class="h0" data-m="2023-02" data-n="0"></i><i class="h0" data-m="2023-03" data-n="0"></i><i class="h0" data-m="2023-04" data-n="0"></i><i class="h0" data-m="2023-05" data-n="0"></i><i class="h0" data-m="2023-06" data-n="0"></i><i class="h0" data-m="2023-07" data-n="0"></i><i class="h0" data-m="2023-08" data-n="0"></i><i class="h0" data-m="2023-09" data-n="0"></i><i class="h0" data-m="2023-10" data-n="0"></i><i class="h0" data-m="2023-11" data-n="0"></i><i class="h0" data-m="2023-12" data-n="0"></i><i class="h0" data-m="2024-01" data-n="0"></i><i class="h0" data-m="2024-02" data-n="0"></i><i class="h0" data-m="2024-03" data-n="0"></i><i class="h0" data-m="2024-04" data-n="0"></i><i class="h0" data-m="2024-05" data-n="0"></i><i class="h0" data-m="2024-06" data-n="0"></i><i class="h0" data-m="2024-07" data-n="0"></i><i class="h0" data-m="2024-08" data-n="0"></i><i class="h0" data-m="2024-09" data-n="0"></i><i class="h0" data-m="2024-10" data-n="0"></i><i class="h0" data-m="2024-11" data-n="0"></i><i class="h0" data-m="2024-12" data-n="0"></i><i class="h0" data-m="2025-01" data-n="0"></i><i class="h0" data-m="2025-02" data-n="0"></i><i class="h0" data-m="2025-03" data-n="0"></i><i class="h0" data-m="2025-04" data-n="0"></i><i class="h0" data-m="2025-05" data-n="0"></i><i class="h0" data-m="2025-06" data-n="0"></i><i class="h0" data-m="2025-07" data-n="0"></i><i class="h0" data-m="2025-08" data-n="0"></i><i class="h0" data-m="2025-09" data-n="0"></i><i class="h0" data-m="2025-10" data-n="0"></i><i class="h0" data-m="2025-11" data-n="0"></i><i class="h0" data-m="2025-12" data-n="0"></i><i class="h0" data-m="2026-01" data-n="0"></i><i class="h0" data-m="2026-02" data-n="0"></i><i class="h0" data-m="2026-03" data-n="0"></i><i class="h0" data-m="2026-04" data-n="0"></i><i class="h0" data-m="2026-05" data-n="0"></i><i class="h0" data-m="2026-06" data-n="0"></i><i class="h5" data-m="2026-07" data-n="207"></i><i class="h3" data-m="2026-08" data-n="38"></i><i class="h4" data-m="2026-09" data-n="92"></i><i class="h4" data-m="2026-10" data-n="95"></i><i class="h0" data-m="2026-11" data-n="0"></i></div><span class="heat-total mono">432</span></div>
+  <div class="heat-row"><a class="heat-name" href="#erp">SoftPro Web</a><div class="heat-cells" role="img" aria-label="SoftPro Web: 854 commits, de 2026-09 a 2026-11"><i class="h0" data-m="2019-11" data-n="0"></i><i class="h0" data-m="2019-12" data-n="0"></i><i class="h0" data-m="2020-01" data-n="0"></i><i class="h0" data-m="2020-02" data-n="0"></i><i class="h0" data-m="2020-03" data-n="0"></i><i class="h0" data-m="2020-04" data-n="0"></i><i class="h0" data-m="2020-05" data-n="0"></i><i class="h0" data-m="2020-06" data-n="0"></i><i class="h0" data-m="2020-07" data-n="0"></i><i class="h0" data-m="2020-08" data-n="0"></i><i class="h0" data-m="2020-09" data-n="0"></i><i class="h0" data-m="2020-10" data-n="0"></i><i class="h0" data-m="2020-11" data-n="0"></i><i class="h0" data-m="2020-12" data-n="0"></i><i class="h0" data-m="2021-01" data-n="0"></i><i class="h0" data-m="2021-02" data-n="0"></i><i class="h0" data-m="2021-03" data-n="0"></i><i class="h0" data-m="2021-04" data-n="0"></i><i class="h0" data-m="2021-05" data-n="0"></i><i class="h0" data-m="2021-06" data-n="0"></i><i class="h0" data-m="2021-07" data-n="0"></i><i class="h0" data-m="2021-08" data-n="0"></i><i class="h0" data-m="2021-09" data-n="0"></i><i class="h0" data-m="2021-10" data-n="0"></i><i class="h0" data-m="2021-11" data-n="0"></i><i class="h0" data-m="2021-12" data-n="0"></i><i class="h0" data-m="2022-01" data-n="0"></i><i class="h0" data-m="2022-02" data-n="0"></i><i class="h0" data-m="2022-03" data-n="0"></i><i class="h0" data-m="2022-04" data-n="0"></i><i class="h0" data-m="2022-05" data-n="0"></i><i class="h0" data-m="2022-06" data-n="0"></i><i class="h0" data-m="2022-07" data-n="0"></i><i class="h0" data-m="2022-08" data-n="0"></i><i class="h0" data-m="2022-09" data-n="0"></i><i class="h0" data-m="2022-10" data-n="0"></i><i class="h0" data-m="2022-11" data-n="0"></i><i class="h0" data-m="2022-12" data-n="0"></i><i class="h0" data-m="2023-01" data-n="0"></i><i class="h0" data-m="2023-02" data-n="0"></i><i class="h0" data-m="2023-03" data-n="0"></i><i class="h0" data-m="2023-04" data-n="0"></i><i class="h0" data-m="2023-05" data-n="0"></i><i class="h0" data-m="2023-06" data-n="0"></i><i class="h0" data-m="2023-07" data-n="0"></i><i class="h0" data-m="2023-08" data-n="0"></i><i class="h0" data-m="2023-09" data-n="0"></i><i class="h0" data-m="2023-10" data-n="0"></i><i class="h0" data-m="2023-11" data-n="0"></i><i class="h0" data-m="2023-12" data-n="0"></i><i class="h0" data-m="2024-01" data-n="0"></i><i class="h0" data-m="2024-02" data-n="0"></i><i class="h0" data-m="2024-03" data-n="0"></i><i class="h0" data-m="2024-04" data-n="0"></i><i class="h0" data-m="2024-05" data-n="0"></i><i class="h0" data-m="2024-06" data-n="0"></i><i class="h0" data-m="2024-07" data-n="0"></i><i class="h0" data-m="2024-08" data-n="0"></i><i class="h0" data-m="2024-09" data-n="0"></i><i class="h0" data-m="2024-10" data-n="0"></i><i class="h0" data-m="2024-11" data-n="0"></i><i class="h0" data-m="2024-12" data-n="0"></i><i class="h0" data-m="2025-01" data-n="0"></i><i class="h0" data-m="2025-02" data-n="0"></i><i class="h0" data-m="2025-03" data-n="0"></i><i class="h0" data-m="2025-04" data-n="0"></i><i class="h0" data-m="2025-05" data-n="0"></i><i class="h0" data-m="2025-06" data-n="0"></i><i class="h0" data-m="2025-07" data-n="0"></i><i class="h0" data-m="2025-08" data-n="0"></i><i class="h0" data-m="2025-09" data-n="0"></i><i class="h0" data-m="2025-10" data-n="0"></i><i class="h0" data-m="2025-11" data-n="0"></i><i class="h0" data-m="2025-12" data-n="0"></i><i class="h0" data-m="2026-01" data-n="0"></i><i class="h0" data-m="2026-02" data-n="0"></i><i class="h0" data-m="2026-03" data-n="0"></i><i class="h0" data-m="2026-04" data-n="0"></i><i class="h0" data-m="2026-05" data-n="0"></i><i class="h0" data-m="2026-06" data-n="0"></i><i class="h0" data-m="2026-07" data-n="0"></i><i class="h0" data-m="2026-08" data-n="0"></i><i class="h3" data-m="2026-09" data-n="53"></i><i class="h5" data-m="2026-10" data-n="587"></i><i class="h5" data-m="2026-11" data-n="214"></i></div><span class="heat-total mono">854</span></div>
+</div>
+        </div>
+        <div class="heat-foot">
+          <ul class="legend mono" aria-label="Commits por mês"><li><i class="h0"></i>Nenhum</li><li><i class="h1"></i>1 a 9</li><li><i class="h2"></i>10 a 29</li><li><i class="h3"></i>30 a 79</li><li><i class="h4"></i>80 a 199</li><li><i class="h5"></i>200 ou mais</li></ul>
+          <span class="mono">Fonte: git log, sem merges, em 06/11/2026</span>
+        </div>
+        <details class="heat-table">
+          <summary class="mono">Ver os totais em tabela</summary>
+          <table><thead><tr><th scope="col">Sistema</th><th scope="col">Primeiro commit</th><th scope="col">Último commit</th><th scope="col">Commits</th></tr></thead><tbody><tr><td>SoftPro Advogado</td><td>2019-11</td><td>2023-03</td><td>350</td></tr><tr><td>+Vendas e Gestor</td><td>2022-10</td><td>2026-11</td><td>1.235</td></tr><tr><td>FootSchool</td><td>2026-06</td><td>2026-10</td><td>692</td></tr><tr><td>Conecta Cerâmica</td><td>2026-07</td><td>2026-10</td><td>432</td></tr><tr><td>SoftPro Web</td><td>2026-09</td><td>2026-11</td><td>854</td></tr></tbody></table>
+        </details>
+      </div>
     </section>
-    <!--End About-->
 
-    <!--Footer-->
-    <footer class="footer">
-        <p>©
-            <script>
-                document.write(new Date().getFullYear())
-            </script>, Carlos A Santos Jr. All rights reserved.</p>
-    </footer>
-    <!--End Footer-->
+    <div id="projetos">
+    <section class="case case--footschool" id="footschool" aria-labelledby="footschool-title">
+      <div class="wrap">
+        <div class="case-text">
+          <p class="case-tag mono">Gestão esportiva · SaaS multi-tenant · 2026 até hoje</p>
+          <h2 id="footschool-title">FootSchool</h2>
+          <p class="case-lead">Plataforma para escolas e clubes de futebol. Cobra a mensalidade pelo WhatsApp, dá baixa sozinha e organiza a rotina técnica do atleta no mesmo app.</p>
+          <ul class="case-list">
+          <li>Mensalidade enviada pelo WhatsApp com link de pagamento. A baixa só acontece por webhook com assinatura validada, e processar o mesmo evento duas vezes dá o mesmo resultado.</li>
+          <li>Inadimplência por atleta, régua de lembretes e rateio de arbitragem e taxa de campeonato entre os atletas.</li>
+          <li>Prancheta tática 2D em canvas, com cenas animadas, que também funciona no celular.</li>
+          <li>Portais do responsável e do atleta em PWA. Dados de menores ficam em disco privado, com URL assinada, seguindo a LGPD.</li>
+          </ul>
+          <dl class="facts">
+          <div><dd>692</dd><dt>commits</dt></div>
+          <div><dd>256</dd><dt>arquivos de teste</dt></div>
+          <div><dd>192</dd><dt>migrations</dt></div>
+          <div><dd>60</dd><dt>decisões em ADR</dt></div>
+          </dl>
+          <p class="case-stack mono">Laravel 13 · PHP 8.3 · PostgreSQL · Redis · Horizon · Reverb · Vue 3 · Quasar · TypeScript · Pinia · Konva · Next.js · Docker</p>
+        <a class="case-link" href="https://footschool.com.br" target="_blank" rel="noopener">Visitar footschool.com.br</a>
+        </div>
+        <div class="case-media" data-gallery>
+          <div class="stage">
+            <figure class="window" style="--ar:16 / 9">
+              <figcaption class="window-bar mono"><span>footschool</span><span>Painel da escola</span></figcaption>
+              <button class="zoom" type="button" data-title="Painel da escola" aria-label="Ampliar tela: Painel da escola"><img src="assets/img/footschool/dashboard.webp" width="1600" height="900" alt="Painel da escola com total de atletas, turmas e atalhos" loading="lazy" decoding="async"></button>
+            </figure>
+            <button class="zoom phone" type="button" data-title="Prancheta tática no celular" aria-label="Ampliar tela: Prancheta tática no celular"><img src="assets/img/footschool/prancheta.webp" width="640" height="1500" alt="Prancheta tática no celular com jogada ensaiada na quadra" loading="lazy" decoding="async"></button>
+          </div>
+          <div class="thumbs" role="group" aria-label="Telas de FootSchool">
+            <button class="thumb" type="button" data-src="assets/img/footschool/dashboard.webp" data-kind="desk" data-title="Painel da escola" data-alt="Painel da escola com total de atletas, turmas e atalhos" aria-pressed="true" aria-label="Mostrar tela: Painel da escola"><img src="assets/img/footschool/dashboard.webp" width="1600" height="900" alt="" loading="lazy" decoding="async"></button>
+            <button class="thumb" type="button" data-src="assets/img/footschool/financeiro.webp" data-kind="desk" data-title="Dashboard financeiro" data-alt="Dashboard financeiro com receita, recebimentos e gráfico de seis meses" aria-pressed="false" aria-label="Mostrar tela: Dashboard financeiro"><img src="assets/img/footschool/financeiro.webp" width="1600" height="900" alt="" loading="lazy" decoding="async"></button>
+            <button class="thumb" type="button" data-src="assets/img/footschool/inadimplencia.webp" data-kind="desk" data-title="Inadimplência por atleta" data-alt="Lista de atletas com mensalidades e taxas em atraso" aria-pressed="false" aria-label="Mostrar tela: Inadimplência por atleta"><img src="assets/img/footschool/inadimplencia.webp" width="1600" height="900" alt="" loading="lazy" decoding="async"></button>
+            <button class="thumb" type="button" data-src="assets/img/footschool/plano-treino.webp" data-kind="desk" data-title="Plano de treino" data-alt="Montagem de plano de treino com biblioteca de exercícios" aria-pressed="false" aria-label="Mostrar tela: Plano de treino"><img src="assets/img/footschool/plano-treino.webp" width="1600" height="900" alt="" loading="lazy" decoding="async"></button>
+            <button class="thumb thumb--phone" type="button" data-src="assets/img/footschool/prancheta.webp" data-kind="phone" data-title="Prancheta tática no celular" data-alt="Prancheta tática no celular com jogada ensaiada na quadra" aria-pressed="true" aria-label="Mostrar tela: Prancheta tática no celular"><img src="assets/img/footschool/prancheta.webp" width="640" height="1500" alt="" loading="lazy" decoding="async"></button>
+            <button class="thumb thumb--phone" type="button" data-src="assets/img/footschool/portal-financeiro.webp" data-kind="phone" data-title="Portal do responsável" data-alt="Portal do responsável com cobranças pagas, a vencer e vencidas" aria-pressed="false" aria-label="Mostrar tela: Portal do responsável"><img src="assets/img/footschool/portal-financeiro.webp" width="640" height="1138" alt="" loading="lazy" decoding="async"></button>
+            <button class="thumb thumb--phone" type="button" data-src="assets/img/footschool/evolucao.webp" data-kind="phone" data-title="Evolução do atleta" data-alt="Tela do atleta com índice geral e gráfico de radar" aria-pressed="false" aria-label="Mostrar tela: Evolução do atleta"><img src="assets/img/footschool/evolucao.webp" width="640" height="1138" alt="" loading="lazy" decoding="async"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="case case--distribuidora case--flip" id="distribuidora" aria-labelledby="distribuidora-title">
+      <div class="wrap">
+        <div class="case-text">
+          <p class="case-tag mono">Força de vendas e indicadores · PWA · 2022 até hoje</p>
+          <h2 id="distribuidora-title">+Vendas e Gestor</h2>
+          <p class="case-lead">Um PWA com duas frentes. O vendedor lança o pedido na rua, com ou sem sinal, e o gestor acompanha vendas, financeiro e produção no celular.</p>
+          <ul class="case-list">
+          <li>Catálogo, clientes e carrinho guardados no aparelho e sincronizados com o ERP em Delphi e Firebird.</li>
+          <li>Painéis de vendas, financeiro, entregas, compras, estoque e produção. A tela carrega em duas ondas para não ficar presa à conexão com o Firebird do cliente.</li>
+          <li>Apontamento de produção da cerâmica: vagonetas, secagem, queima e perdas.</li>
+          <li>Análises por IA sobre os próprios indicadores, com a API da Anthropic e resposta por streaming, e API de integração para parceiros.</li>
+          </ul>
+          <dl class="facts">
+          <div><dd>1.235</dd><dt>commits</dt></div>
+          <div><dd>335</dd><dt>componentes Vue</dt></div>
+          <div><dd>243</dd><dt>migrations</dt></div>
+          <div><dd>64</dd><dt>arquivos de teste</dt></div>
+          </dl>
+          <p class="case-stack mono">Laravel 8 · Horizon · Sanctum · MySQL · Firebird · Redis · Vue 2 · Quasar · ApexCharts · PWA · Cordova · Docker</p>
+        <a class="case-link" href="https://softproceramica.com.br/aplicativo-de-vendas/" target="_blank" rel="noopener">Ver o app de vendas no site da SoftPro</a>
+        </div>
+        <div class="case-media" data-gallery>
+          <div class="stage">
+            <figure class="window" style="--ar:16 / 10">
+              <figcaption class="window-bar mono"><span>softpro gestor</span><span>Abertura do Gestor</span></figcaption>
+              <button class="zoom" type="button" data-title="Abertura do Gestor" aria-label="Ampliar tela: Abertura do Gestor"><img src="assets/img/distribuidora/gestor-home.webp" width="1600" height="1000" alt="Painel de abertura do Gestor com indicadores do dia, alertas e próximos sete dias" loading="lazy" decoding="async"></button>
+            </figure>
+            <button class="zoom phone" type="button" data-title="Vendas no celular" aria-label="Ampliar tela: Vendas no celular"><img src="assets/img/distribuidora/gestor-vendas-celular.webp" width="640" height="1336" alt="Resumo executivo de vendas no celular" loading="lazy" decoding="async"></button>
+          </div>
+          <div class="thumbs" role="group" aria-label="Telas de +Vendas e Gestor">
+            <button class="thumb" type="button" data-src="assets/img/distribuidora/gestor-home.webp" data-kind="desk" data-title="Abertura do Gestor" data-alt="Painel de abertura do Gestor com indicadores do dia, alertas e próximos sete dias" aria-pressed="true" aria-label="Mostrar tela: Abertura do Gestor"><img src="assets/img/distribuidora/gestor-home.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></button>
+            <button class="thumb" type="button" data-src="assets/img/distribuidora/gestor-vendas.webp" data-kind="desk" data-title="Dashboard de vendas" data-alt="Dashboard de vendas com resumo executivo e evolução diária" aria-pressed="false" aria-label="Mostrar tela: Dashboard de vendas"><img src="assets/img/distribuidora/gestor-vendas.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></button>
+            <button class="thumb thumb--phone" type="button" data-src="assets/img/distribuidora/gestor-vendas-celular.webp" data-kind="phone" data-title="Vendas no celular" data-alt="Resumo executivo de vendas no celular" aria-pressed="true" aria-label="Mostrar tela: Vendas no celular"><img src="assets/img/distribuidora/gestor-vendas-celular.webp" width="640" height="1336" alt="" loading="lazy" decoding="async"></button>
+            <button class="thumb thumb--phone" type="button" data-src="assets/img/distribuidora/gestor-home-celular.webp" data-kind="phone" data-title="Gestor no celular" data-alt="Gestor no celular com vendas, recebimentos, pagamentos e saldo do dia" aria-pressed="false" aria-label="Mostrar tela: Gestor no celular"><img src="assets/img/distribuidora/gestor-home-celular.webp" width="640" height="1336" alt="" loading="lazy" decoding="async"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="case case--conecta" id="conecta" aria-labelledby="conecta-title">
+      <div class="wrap">
+        <div class="case-text">
+          <p class="case-tag mono">CRM e atendimento omnichannel · SaaS multi-tenant · 2026 até hoje</p>
+          <h2 id="conecta-title">SoftPro Conecta Cerâmica</h2>
+          <p class="case-lead">Atendimento e CRM para a indústria cerâmica. A conversa do WhatsApp entra numa central única e vira histórico do cliente.</p>
+          <ul class="case-list">
+          <li>Um banco de dados por cliente, com base orquestradora separada e provisionamento automatizado.</li>
+          <li>Central de atendimento em tempo real. Todo canal converge para uma única conversa, e um canal novo é só mais um adaptador.</li>
+          <li>Cliente 360 com linha do tempo, pipeline em kanban, catálogo, tabela de preço e proposta em PDF.</li>
+          <li>IA para resumir conversas, sugerir respostas e apontar riscos e recomendações do período.</li>
+          </ul>
+          <dl class="facts">
+          <div><dd>432</dd><dt>commits</dt></div>
+          <div><dd>112</dd><dt>arquivos de teste</dt></div>
+          <div><dd>113</dd><dt>migrations</dt></div>
+          <div><dd>43</dd><dt>decisões em ADR</dt></div>
+          </dl>
+          <p class="case-stack mono">Laravel 12 · PostgreSQL · Redis · Horizon · Reverb · Sanctum · stancl/tenancy · Vue 3 · Quasar · TypeScript · Pinia · Next.js · Pest · Docker</p>
+        <a class="case-link" href="https://softproceramica.com.br/" target="_blank" rel="noopener">Conhecer no site da SoftPro</a>
+        </div>
+        <div class="case-media" data-gallery>
+          <div class="stage">
+            <figure class="window" style="--ar:16 / 10">
+              <figcaption class="window-bar mono"><span>conecta cerâmica</span><span>Central de atendimento</span></figcaption>
+              <button class="zoom" type="button" data-title="Central de atendimento" aria-label="Ampliar tela: Central de atendimento"><img src="assets/img/conecta/atendimento.webp" width="1600" height="1000" alt="Central de atendimento com lista de conversas e cliente ao lado" loading="lazy" decoding="async"></button>
+            </figure>
+            <button class="zoom phone" type="button" data-title="Conversa no celular" aria-label="Ampliar tela: Conversa no celular"><img src="assets/img/conecta/conversa-celular.webp" width="640" height="1387" alt="Conversa de atendimento aberta no celular" loading="lazy" decoding="async"></button>
+          </div>
+          <div class="thumbs" role="group" aria-label="Telas de SoftPro Conecta Cerâmica">
+            <button class="thumb" type="button" data-src="assets/img/conecta/atendimento.webp" data-kind="desk" data-title="Central de atendimento" data-alt="Central de atendimento com lista de conversas e cliente ao lado" aria-pressed="true" aria-label="Mostrar tela: Central de atendimento"><img src="assets/img/conecta/atendimento.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></button>
+            <button class="thumb" type="button" data-src="assets/img/conecta/pipeline.webp" data-kind="desk" data-title="Pipeline comercial" data-alt="Pipeline comercial em kanban com oportunidades por etapa" aria-pressed="false" aria-label="Mostrar tela: Pipeline comercial"><img src="assets/img/conecta/pipeline.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></button>
+            <button class="thumb" type="button" data-src="assets/img/conecta/cliente-360.webp" data-kind="desk" data-title="Cliente 360" data-alt="Ficha do cliente com oportunidades, pipeline e linha do tempo" aria-pressed="false" aria-label="Mostrar tela: Cliente 360"><img src="assets/img/conecta/cliente-360.webp" width="1400" height="875" alt="" loading="lazy" decoding="async"></button>
+            <button class="thumb" type="button" data-src="assets/img/conecta/resumo-ia.webp" data-kind="desk" data-title="Resumo por IA" data-alt="Conversa aberta com resumo gerado por IA" aria-pressed="false" aria-label="Mostrar tela: Resumo por IA"><img src="assets/img/conecta/resumo-ia.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></button>
+            <button class="thumb" type="button" data-src="assets/img/conecta/inicio-escuro.webp" data-kind="desk" data-title="Início em tema escuro" data-alt="Painel inicial em tema escuro com visão comercial e atendimento" aria-pressed="false" aria-label="Mostrar tela: Início em tema escuro"><img src="assets/img/conecta/inicio-escuro.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></button>
+            <button class="thumb thumb--phone" type="button" data-src="assets/img/conecta/conversa-celular.webp" data-kind="phone" data-title="Conversa no celular" data-alt="Conversa de atendimento aberta no celular" aria-pressed="true" aria-label="Mostrar tela: Conversa no celular"><img src="assets/img/conecta/conversa-celular.webp" width="640" height="1387" alt="" loading="lazy" decoding="async"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="case case--erp case--flip" id="erp" aria-labelledby="erp-title">
+      <div class="wrap">
+        <div class="case-text">
+          <p class="case-tag mono">ERP e migração de legado · Em desenvolvimento · 2026 até hoje</p>
+          <h2 id="erp-title">SoftPro Web</h2>
+          <p class="case-lead">O ERP que substitui o sistema legado em Delphi e Firebird. Cada módulo é construído e validado por vez, e o cliente entra em produção numa virada única.</p>
+          <ul class="case-list">
+          <li>Área de trabalho com várias janelas abertas e barra de tarefas no navegador, para quem passa o dia inteiro no ERP.</li>
+          <li>Pedido de venda, financeiro com baixas, rateio e renegociação, estoque, frota e fiscal com CFOP, CST e tributos.</li>
+          <li>Papéis e permissões por janela e por ação, com matriz editável e trilha de auditoria.</li>
+          <li>Importação das bases legadas planejada em frente própria, com a compatibilidade da origem documentada em cada especificação.</li>
+          </ul>
+          <dl class="facts">
+          <div><dd>854</dd><dt>commits</dt></div>
+          <div><dd>458</dd><dt>arquivos de teste</dt></div>
+          <div><dd>124</dd><dt>migrations</dt></div>
+          <div><dd>19</dd><dt>decisões em ADR</dt></div>
+          </dl>
+          <p class="case-stack mono">Laravel 12 · stancl/tenancy · PostgreSQL · Firebird · Redis · Vue 3 · Quasar · TypeScript · Pinia · Vite · ACBr · Docker</p>
+        </div>
+        <div class="case-media" data-gallery>
+          <div class="stage stage--plain">
+            <figure class="window" style="--ar:16 / 9">
+              <figcaption class="window-bar mono"><span>softpro web</span><span>Contas a receber</span></figcaption>
+              <button class="zoom" type="button" data-title="Contas a receber" aria-label="Ampliar tela: Contas a receber"><img src="assets/img/erp/contas-receber.webp" width="1366" height="768" alt="Lista de contas a receber com títulos, situação e totais, e janelas abertas na barra de tarefas" loading="lazy" decoding="async"></button>
+            </figure>
+          </div>
+          <div class="thumbs" role="group" aria-label="Telas de SoftPro Web">
+            <button class="thumb" type="button" data-src="assets/img/erp/contas-receber.webp" data-kind="desk" data-title="Contas a receber" data-alt="Lista de contas a receber com títulos, situação e totais, e janelas abertas na barra de tarefas" aria-pressed="true" aria-label="Mostrar tela: Contas a receber"><img src="assets/img/erp/contas-receber.webp" width="1366" height="768" alt="" loading="lazy" decoding="async"></button>
+            <button class="thumb" type="button" data-src="assets/img/erp/renegociar.webp" data-kind="desk" data-title="Renegociação de títulos" data-alt="Janela de renegociação de títulos sobre a lista de contas a receber" aria-pressed="false" aria-label="Mostrar tela: Renegociação de títulos"><img src="assets/img/erp/renegociar.webp" width="1366" height="768" alt="" loading="lazy" decoding="async"></button>
+            <button class="thumb" type="button" data-src="assets/img/erp/tributos.webp" data-kind="desk" data-title="Tributos do item" data-alt="Item do pedido de venda com a aba de tributos" aria-pressed="false" aria-label="Mostrar tela: Tributos do item"><img src="assets/img/erp/tributos.webp" width="1366" height="768" alt="" loading="lazy" decoding="async"></button>
+            <button class="thumb" type="button" data-src="assets/img/erp/permissoes.webp" data-kind="desk" data-title="Papéis e permissões" data-alt="Matriz de permissões por janela e por ação" aria-pressed="false" aria-label="Mostrar tela: Papéis e permissões"><img src="assets/img/erp/permissoes.webp" width="1440" height="900" alt="" loading="lazy" decoding="async"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="case case--advogados" id="advogados" aria-labelledby="advogados-title">
+      <div class="wrap">
+        <div class="case-text">
+          <p class="case-tag mono">Gestão jurídica · SaaS multi-tenant · 2019 a 2023</p>
+          <h2 id="advogados-title">SoftPro Advogado</h2>
+          <p class="case-lead">SaaS para escritórios de advocacia, com processos, prazos, agenda, financeiro e honorários.</p>
+          <ul class="case-list">
+          <li>Cada escritório recebe subdomínio e banco de dados próprios no cadastro, com assinatura por plano em Stripe e PayPal.</li>
+          <li>Monitoramento de publicações e andamentos por OAB e por número de processo, integrado a serviço de publicações.</li>
+          <li>Agenda com FullCalendar e sincronização com o Google Agenda. Chat e notificações em tempo real por WebSocket.</li>
+          <li>Contratos gerados a partir de modelos e honorários ligados a cada processo.</li>
+          </ul>
+          <dl class="facts">
+          <div><dd>350</dd><dt>commits</dt></div>
+          <div><dd>75</dd><dt>controllers</dt></div>
+          <div><dd>162</dd><dt>migrations</dt></div>
+          <div><dd>44</dd><dt>models</dt></div>
+          </dl>
+          <p class="case-stack mono">Laravel · MySQL · Redis · Laravel Echo · Vue 2 · Vuex · AdminLTE · FullCalendar · Stripe · PayPal · Docker</p>
+        </div>
+        <div class="case-media" data-gallery>
+          <div class="stage stage--plain">
+            <figure class="window" style="--ar:16 / 10">
+              <figcaption class="window-bar mono"><span>softpro advogado</span><span>Painel do advogado</span></figcaption>
+              <button class="zoom" type="button" data-title="Painel do advogado" aria-label="Ampliar tela: Painel do advogado"><img src="assets/img/advogados/painel.webp" width="1600" height="1000" alt="Painel com andamentos, prazos, audiências e atividades" loading="lazy" decoding="async"></button>
+            </figure>
+          </div>
+          <div class="thumbs" role="group" aria-label="Telas de SoftPro Advogado">
+            <button class="thumb" type="button" data-src="assets/img/advogados/painel.webp" data-kind="desk" data-title="Painel do advogado" data-alt="Painel com andamentos, prazos, audiências e atividades" aria-pressed="true" aria-label="Mostrar tela: Painel do advogado"><img src="assets/img/advogados/painel.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></button>
+            <button class="thumb" type="button" data-src="assets/img/advogados/processos.webp" data-kind="desk" data-title="Processos" data-alt="Lista de processos com cliente, advogados, progresso e status" aria-pressed="false" aria-label="Mostrar tela: Processos"><img src="assets/img/advogados/processos.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></button>
+            <button class="thumb" type="button" data-src="assets/img/advogados/processo.webp" data-kind="desk" data-title="Detalhes do processo" data-alt="Detalhes do processo com valores, andamentos e etapas concluídas" aria-pressed="false" aria-label="Mostrar tela: Detalhes do processo"><img src="assets/img/advogados/processo.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></button>
+            <button class="thumb" type="button" data-src="assets/img/advogados/agenda.webp" data-kind="desk" data-title="Agenda" data-alt="Agenda mensal com prazos, reuniões e audiências" aria-pressed="false" aria-label="Mostrar tela: Agenda"><img src="assets/img/advogados/agenda.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></button>
+            <button class="thumb" type="button" data-src="assets/img/advogados/financeiro.webp" data-kind="desk" data-title="Financeiro" data-alt="Gestão financeira com contas a pagar e a receber" aria-pressed="false" aria-label="Mostrar tela: Financeiro"><img src="assets/img/advogados/financeiro.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
 
-    <!-- Bootstrap 4 -->
-    <script src="assets/js/jquery-3.4.1.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/packages/frescojs/js/fresco.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <section class="resume" id="curriculo" aria-labelledby="resume-title">
+      <div class="wrap">
+        <div class="resume-head">
+          <h2 class="section-title" id="resume-title">Currículo</h2>
+          <p>Comecei em 2003 com Delphi e DataFlex e passei para a web em 2018. Essa bagagem continua no meu trabalho: boa parte do que faço hoje é levar sistemas legados para a web sem parar a operação do cliente.</p>
+        </div>
+        <div class="resume-grid">
+          <div class="resume-col">
+            <div>
+              <h3>Experiência</h3>
+              <ul class="ledger">
+              <li><span class="when mono">2018 até hoje</span><div><strong>SoftPro Sistemas</strong><span class="role">Desenvolvedor backend, PHP Laravel e Vue.js</span></div></li>
+              <li><span class="when mono">2011 a 2017</span><div><strong>The Place Sistemas</strong><span class="role">Desenvolvedor Delphi</span></div></li>
+              <li><span class="when mono">2005 a 2010</span><div><strong>C.Ss.R Editora Santuário</strong><span class="role">Desenvolvedor Delphi</span></div></li>
+              <li><span class="when mono">2003 a 2005</span><div><strong>D.M.S Data System</strong><span class="role">Desenvolvedor Delphi e DataFlex</span></div></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Formação</h3>
+              <ul class="ledger">
+              <li><span class="when mono">2018 a 2021</span><div><strong>Fatec Guaratinguetá</strong><span class="role">Gestão da Tecnologia da Informação</span></div></li>
+              <li><span class="when mono">1999 a 2001</span><div><strong>ENIAC Informática</strong><span class="role">Técnico em Informática</span></div></li>
+              </ul>
+            </div>
+          </div>
+          <div class="resume-col">
+            <div>
+              <h3>Competências</h3>
+              <dl class="skills">
+              <div><dt>Backend</dt><dd>PHP 8, Laravel do 8 ao 13, APIs REST, filas com Horizon, WebSocket com Reverb e Echo, Sanctum, multi-tenancy, Delphi</dd></div>
+              <div><dt>Frontend</dt><dd>Vue 2 e 3, Quasar, TypeScript, Pinia, Vuex, PWA e uso offline, Next.js, canvas com Konva, ApexCharts</dd></div>
+              <div><dt>Dados</dt><dd>PostgreSQL, MySQL, Firebird, SQL Server, Redis, migração de bases legadas</dd></div>
+              <div><dt>Infra</dt><dd>Docker, GitHub Actions, Nginx, DigitalOcean</dd></div>
+              <div><dt>Integrações</dt><dd>WhatsApp, Stripe, PayPal, Google Agenda, ACBr para NF-e e boleto, API da Anthropic</dd></div>
+              <div><dt>Método</dt><dd>Especificação antes do código, ADRs, Scrum, code review, testes com Pest e PHPUnit, agentes de IA no fluxo de trabalho</dd></div>
+              </dl>
+            </div>
+            <div>
+              <h3>Também</h3>
+              <dl class="skills">
+              <div><dt>Certificações</dt><dd>CCNA Routing and Switching: Introduction to Networks (Cisco), Cisco IT Essentials, Scrum Foundation Professional Certificate (SFPC)</dd></div>
+              <div><dt>Cursos</dt><dd>Docker e CI/CD com GitHub Actions (2022), API REST com Laravel e Vue (2020), Laravel avançado (2020), Multi-tenancy e ACL (2019), Repository Pattern (2019)</dd></div>
+              <div><dt>Idiomas</dt><dd>Português nativo, inglês intermediário</dd></div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <!--Custom JS-->
-    <script src="assets/js/main.js"></script>
+  <section class="contact" id="contato" aria-labelledby="contact-title">
+    <div class="wrap">
+      <h2 id="contact-title">Vamos conversar sobre o seu sistema.</h2>
+      <ul class="contact-list">
+        <li><a href="mailto:carlosasjr2003@hotmail.com">carlosasjr2003@hotmail.com</a><button class="copy" type="button" data-copy="carlosasjr2003@hotmail.com">Copiar</button></li>
+        <li><a href="https://wa.me/5512981544374" target="_blank" rel="noopener">WhatsApp</a><span class="mono">+55 12 98154-4374</span></li>
+        <li><a href="https://www.linkedin.com/in/carlos-santosjr/" target="_blank" rel="noopener">LinkedIn</a><span class="mono">carlos-santosjr</span></li>
+        <li><a href="https://github.com/carlosasjr" target="_blank" rel="noopener">GitHub</a><span class="mono">carlosasjr</span></li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177790309-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+  <footer class="site-foot">
+    <div class="wrap">
+      <span>© 2026 Carlos Antônio dos Santos Júnior</span>
+    </div>
+  </footer>
 
-        gtag('config', 'UA-177790309-1');
-    </script>
+  <dialog class="lightbox" id="lightbox" aria-label="Tela ampliada">
+    <div class="lightbox-bar">
+      <span class="mono" data-title></span>
+      <button class="lightbox-close" type="button">Fechar</button>
+    </div>
+    <img alt="">
+  </dialog>
 
+  <script src="assets/js/main.js" defer></script>
 </body>
-
 </html>
