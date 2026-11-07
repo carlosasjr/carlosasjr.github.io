@@ -442,7 +442,7 @@ figure {
 .heat-cells,
 .heat-years {
   display: grid;
-  grid-template-columns: repeat(85, minmax(0, 1fr));
+  grid-template-columns: repeat(86, minmax(0, 1fr));
   gap: 2px;
 }
 
@@ -560,6 +560,14 @@ figure {
   --b-muted: var(--conecta-muted);
   --b-line: var(--conecta-line);
   --b-accent: var(--conecta-accent);
+}
+
+.case--delphi {
+  --b-bg: #24272c;
+  --b-fg: #f2f3f4;
+  --b-muted: #bcc1c8;
+  --b-line: #3f444b;
+  --b-accent: #ff9a3d;
 }
 
 .case--erp {
@@ -826,6 +834,29 @@ figure {
 
 .thumb:focus-visible {
   outline-color: var(--b-accent);
+}
+
+.menu-map {
+  display: grid;
+  gap: 0.6rem;
+  padding-top: 0.5rem;
+  color: var(--b-muted);
+}
+
+.menu-map ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-map li {
+  padding: 0.2rem 0.55rem;
+  border: 1px solid var(--b-line);
+  border-radius: 3px;
+  color: var(--b-fg);
+  font-size: 0.8125rem;
 }
 
 /* Currículo */
